@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" th:href="@{css/home.css}"/>
+	<link rel="stylesheet" th:href="@{css/style.css}"/>
+	<link rel="icon" th:href="@{images/white-logo.png}"/>
+
+	<title>Tour Reservation</title>
+</head>
+
+<body>
+
+	<div class="main-overlay js-main-overlay"></div>
+
+
+	<section class="cover-main" id="home">
+		<header>
+        			<nav class="nav-wrapper">
+        				<div class="logo">
+        					<a href="#"> <img src="images/white-logo.png" class="logo"/>
+        					</a>
+        				</div>
+
+
+        				<ul class="menu">
+
+        				</ul>
+        			</nav>
+        			<div class="menu-trigger js-menu-trigger"></div>
+        		</header>
+
+
+		<div class="wrapper">
+			<ul id="scene" data-invert-x="false" data-invert-y="false" data-scalar-x="7" data-scalar-y="7"
+				data-friction-x="0.1" data-friction-y="0.1" data-origin-x="0.5" data-origin-y="0.5">
+				<li class="layer name" data-depth="0.90">КАЗКОВИЙ ОСТРІВ МАВРИКІЙ</li>
+				<li class="layer title" data-depth="0.50">Бронюй тур зараз !</li>
+				<li class="layer btn btn-main" data-depth="0.30"><a th:href="@{/login}" class="logout-btn">Бронювати</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="hotel page-section">
+          <div class="container">
+            <a name="hotel"></a>
+            <h3 class="hotel__title title">
+              Про Маврикій
+            </h3>
+            <div class="hotel__inner">
+
+              <div class="hotel__content">
+                <p class="hotel__text">
+                  У південній частині Індійського океану, недалеко від острова Мадагаскар знаходиться Маврикій – казковий острів з широкою смугою білих піщаних пляжів.
+                   Коралові рифи оточують його з усіх боків, тому океан тут завжди спокійний.
+                </p>
+                <p class="hotel__text">
+                  Маврикій – це цивілізована екзотика  з шикарними готелями на побережжі.
+                  Маврикій разом з островом Реюньон і островом Родрігес складає групу Маскаренских островів. Тут Ви чудово проведете час, насолоджуючись курортним життям.
+                </p>
+                <p class="hotel__text">
+                  Маврикій – невеликий острів, його розміри 65 км на 50 км. Рекомендуємо відвідати Флік ан Флак, яке дуже популярне місце для відпочинку місцевих: тут чудові пляжі, а неподалік прекрасний заповідник Казела Берд Парк.
+                  Бухта Тамарина з її дуже частими потужними хвилями, є ідеальним місцем для серферів на о. Маврикій, відпочинок на якому запам’ятається на довго.
+                </p>
+                <div class="hotel__gallery">
+                  <a data-fancybox="images" data-width="1048" data-height="1365" href="images/mainimg1.jpg">
+                    <img class="inges" src="images/mainimg1.jpg" alt=""/>
+                  </a>
+                  <a data-fancybox="images" data-width="1048" data-height="1365" href="images/romantic1.jpg">
+                    <img class="inges" src="images/romantic1.jpg" alt=""/>
+                  </a>
+                  <a data-fancybox="images" data-width="1048" data-height="1365" href="images/romantic2.jpg">
+                    <img class="inges" src="images/romantic2.jpg" alt=""/>
+                  </a>
+                  <a data-fancybox="images" data-width="1048" data-height="1365" href="images/tale2.jpg">
+                    <img class="inges" src="images/tale2.jpg" alt=""/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+	<section class="hotel page-section">
+      <div class="container">
+        <a name="hotel"></a>
+        <h3 class="hotel__title title">
+          Готель
+        </h3>
+        <div class="hotel__inner">
+
+          <div class="hotel__content">
+            <p class="hotel__text">
+              Готель категорії 5 * розташований в південно-західній частині Маврикія, в 70 км від аеропорту на власному півострові, в 7 км від пляжу, біля підніжжя гори Ле Морн. Ідеальне місце для любителів активного відпочинку.
+              Готель славиться своїм прекрасним полем для гольфу (18 лунок). Для зручності гостей по готелю Paradis курсують невеликі електропоїзди. Увечері в готелі грає жива музика, влаштовуються фольклорні танцювальні уявлення, є казино.
+
+            </p>
+            <p class="hotel__text">
+              Ресторан Blue Marlin, що став своєрідним символом готелю, знаходиться прямо біля води, і вечір, проведений при свічках, залишиться в пам'яті надовго Номерний фонд: 286 номерів і 13 вілл
+            </p>
+            <p class="hotel__text">
+              Гості готелю можуть повечеряти в будь-якому з ресторанів з видом на море або на басейн. У готелі є прекрасний італійський ресторан La Palma і ресторан креольської кухні La Ravanne.
+            </p>
+            <div class="hotel__gallery">
+              <a data-fancybox="images" data-width="2048" data-height="1365" href="images/hotel.jpg">
+                <img class="inges" src="images/hotel.jpg" alt=""/>
+              </a>
+              <a data-fancybox="images" data-width="2048" data-height="1365" href="images/hotel_img_1.jpg">
+                <img class="inges" src="images/hotel_img_1.jpg" alt=""/>
+              </a>
+              <a data-fancybox="images" data-width="2048" data-height="1365" href="images/hotel_img_3.jpg">
+                <img class="inges" src="images/hotel_img_3.jpg" alt=""/>
+              </a>
+              <a data-fancybox="images" data-width="2048" data-height="1365" href="images/hotel_img_4.jpg">
+                <img class="inges" src="images/hotel_img_4.jpg" alt=""/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<script th:src="@{js/parallax.min.js}"></script>
+	<script th:src="@{js/home.js}"></script>
+
+</body>
+
+</html>

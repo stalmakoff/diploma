@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html ng-app="diploma">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Travel Agency</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="plugins/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="plugins/bower_components/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet"
+	href="plugins/bower_components/angular-growl-v2/build/angular-growl.min.css" />
+
+
+<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<div ng-include="'navbar/nav-bar.html'"></div>
+
+	<section ng-controller="UsersController" ng-init="__init()">
+		<div growl=""></div>
+		<div class="container">
+			<div class="col-lg-12" style="text-align: center">
+				<h1 style="padding: 30px; text-decoration: underline;">USERS</h1>
+			</div>
+			<div class="col-lg-12">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="user in users">
+							<td>{{$index+1}}</td>
+							<td>{{user.name}}</td>
+							<td>{{user.email}}</td>
+							<td>{{user.type}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+
+	</section>
+
+	<section>
+		<script src="plugins/bower_components/angular/angular.min.js"></script>
+		<script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="plugins/bower_components/tether/dist/js/tether.min.js"></script>
+		<script
+			src="plugins/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script
+			src="plugins/bower_components/angular-growl-v2/build/angular-growl.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="controllers/usersController.js"></script>
+	</section>
+</body>
+</html>
